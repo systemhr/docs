@@ -19,7 +19,7 @@
   "topbarLinks": [
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
+    "name": "Go to Playmaker ->",
     "url": "https://dashboard.mintlify.com"
   },
   "tabs": [
