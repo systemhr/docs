@@ -1,0 +1,87 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "theme": "prism",
+  "name": "Starter Kit",
+  "logo": {
+    "dark": "https://framerusercontent.com/images/99aPPt1KlJB1qusC7sn4xhL4hbw.svg",
+    "light": "https://framerusercontent.com/images/99aPPt1KlJB1qusC7sn4xhL4hbw.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#7171f2",
+    "light": "#AEAEFF",
+    "dark": "#7171f2",
+    "anchors": {
+      "from": "#7171f2",
+      "to": "#AEAEFF"
+    }
+  },
+  "topbarLinks": [
+  ],
+  "topbarCtaButton": {
+    "name": "Go to Playmaker ->",
+    "url": "https://app.playmakerml.com"
+  },
+  "tabs": [
+  ],
+  "anchors": [
+    {
+      "name": "Documentation",
+      "icon": "book-open-cover",
+      "url": "https://playmaker.mintlify.app/intro/overview"
+    },
+    {
+      "name": "API Reference",
+      "icon": "code",
+      "url": "https://playmaker.mintlify.app/intro/overview"
+    },
+    {
+      "name": "Status",
+      "icon": "battery-three-quarters",
+      "url": "https://status.playmakerml.com/"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Introduction",
+      "pages": [
+        "overview",
+        "quickstart"
+      ]
+    },
+    {
+      "group": "Plays",
+      "pages": [
+        "plays/basics",
+        "plays/prospecting",
+        "plays/outreach"
+      ]
+    },
+    {
+      "group": "Launch",
+      "pages": [
+        "launch/start",
+        "launch/training",
+        "launch/autopilot"
+      ]
+    },
+    {
+      "group": "Mailboxes",
+      "pages": [
+        "mailboxes/mailboxes",
+        "mailboxes/recommendations"
+      ]
+    },
+    {
+      "group": "Settings",
+      "pages": [
+        "settings/integrations",
+        "settings/blocklists"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/playmakerml",
+    "linkedin": "https://www.linkedin.com/company/playmakerml"
+  }
+}
