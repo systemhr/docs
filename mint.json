@@ -56,18 +56,31 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Plays",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "introduction",
+        "quickstart",
+        "development"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Training",
+      "pages": [
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images"
+      ]
+    },
+    {
+      "group": "Mailboxes",
+      "pages": [
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images"
+      ]
+    },
+    {
+      "group": "Settings",
       "pages": [
         "api-reference/introduction"
       ]
