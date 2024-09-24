@@ -41,7 +41,18 @@
       "url": "https://status.playmakerml.com/"
     }
   ],
-  "navigation": [],
+  "navigation": [
+    {
+        "group": "Getting Started",
+        "pages": [
+            "quickstart",
+            {
+                "group": "Nested Reference Pages",
+                "pages": ["nested-reference-page"]
+            }
+        ]
+    }
+],
   "footerSocials": {
     "x": "https://x.com/playmakerml",
     "linkedin": "https://www.linkedin.com/company/playmakerml"
