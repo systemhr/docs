@@ -58,17 +58,10 @@
       ]
     },
     {
-      "group": "Go Live",
-      "pages": [
-        "golive/training",
-        "golive/autopilot"
-      ]
-    },
-    {
       "group": "Mailboxes",
       "pages": [
         "mailboxes/mailboxes",
-        "mailboxes/bestpractices"
+        "mailboxes/recommendations"
       ]
     },
     {
