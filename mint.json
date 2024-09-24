@@ -83,5 +83,9 @@
   "footerSocials": {
     "x": "https://x.com/playmakerml",
     "linkedin": "https://www.linkedin.com/company/playmakerml"
-  }
+  },
+  "modeToggle": {
+  "default": "dark",
+  "isHidden": true
+}
 }
