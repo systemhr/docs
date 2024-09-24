@@ -45,16 +45,16 @@
     {
       "group": "Introduction",
       "pages": [
-        "overview",
-        "quickstart"
+        "documentation/overview",
+        "documentation/quickstart"
       ]
     },
     {
       "group": "Plays",
       "pages": [
-        "plays/basics",
-        "plays/prospecting",
-        "plays/outreach"
+        "documentation/plays/basics",
+        "documentation/plays/prospecting",
+        "documentation/plays/outreach"
       ]
     },
     {
