@@ -58,6 +58,14 @@
       ]
     },
     {
+      "group": "Launch",
+      "pages": [
+        "launch/start",
+        "launch/training",
+        "launch/autopilot"
+      ]
+    },
+    {
       "group": "Mailboxes",
       "pages": [
         "mailboxes/mailboxes",
