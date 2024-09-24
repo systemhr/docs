@@ -49,5 +49,8 @@
   "modeToggle": {
   "default": "dark",
   "isHidden": true
+},
+"seo": {
+  "indexHiddenPages": false
 }
 }
