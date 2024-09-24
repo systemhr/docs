@@ -43,41 +43,39 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Introduction",
       "pages": [
-        "start/1",
-        "start/2",
-        "start/3"
+        "introduction/overview",
+        "introduction/quickstart"
       ]
     },
     {
       "group": "Plays",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "plays/basics",
+        "plays/prospecting",
+        "plays/outreach"
       ]
     },
     {
-      "group": "Training",
+      "group": "Go Live",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images"
+        "golive/training",
+        "golive/autopilot"
       ]
     },
     {
       "group": "Mailboxes",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images"
+        "mailboxes/mailboxes",
+        "mailboxes/bestpractices"
       ]
     },
     {
       "group": "Settings",
       "pages": [
-        "api-reference/introduction"
+        "settings/integrations",
+        "settings/blocklists"
       ]
     }
   ],
