@@ -38,14 +38,19 @@
       "url": "https://mintlify.com/docs"
     },
     {
-      "name": "Community",
+      "name": "API Reference",
       "icon": "slack",
       "url": "https://mintlify.com/community"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Support",
+      "icon": "slack",
+      "url": "https://mintlify.com/community"
+    },
+    {
+      "name": "Status",
+      "icon": "slack",
+      "url": "https://mintlify.com/community"
     }
   ],
   "navigation": [
