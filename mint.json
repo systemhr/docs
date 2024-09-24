@@ -43,14 +43,18 @@
   ],
   "navigation": [
     {
-        "group": "Getting Started",
-        "pages": [
-            "quickstart",
-            {
-                "group": "Nested Reference Pages",
-                "pages": ["introduction"]
-            }
-        ]
+        "group": "Documentation",
+        "pages": {
+                "group": "Get Started",
+                "pages": ["quickstart"]
+        }
+    },
+    {
+        "group": "API Reference",
+        "pages": {
+                "group": "API Ref",
+                "pages": ["documentation/quickstart"]
+        }
     }
 ],
   "footerSocials": {
