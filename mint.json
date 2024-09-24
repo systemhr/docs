@@ -32,12 +32,12 @@
     },
     {
       "name": "API Reference",
-      "icon": "slack",
+      "icon": "code",
       "url": "https://mintlify.com/community"
     },
     {
       "name": "Status",
-      "icon": "slack",
+      "icon": "battery-three-quarters",
       "url": "https://mintlify.com/community"
     }
   ],
