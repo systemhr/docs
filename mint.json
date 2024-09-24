@@ -31,11 +31,6 @@
       "url": "https://playmaker.mintlify.app/intro/overview"
     },
     {
-      "name": "API Reference",
-      "icon": "code",
-      "url": "https://playmaker.mintlify.app/intro/overview"
-    },
-    {
       "name": "Status",
       "icon": "battery-three-quarters",
       "url": "https://status.playmakerml.com/"
