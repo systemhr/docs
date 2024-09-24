@@ -43,20 +43,43 @@
   ],
   "navigation": [
     {
-        "group": "Documentation",
-        "pages": {
-                "group": "Get Started",
-                "pages": ["quickstart"]
-        }
+      "group": "Introduction",
+      "pages": [
+        "intro/overview",
+        "intro/quickstart"
+      ]
     },
     {
-        "group": "API Reference",
-        "pages": {
-                "group": "API Ref",
-                "pages": ["documentation/quickstart"]
-        }
+      "group": "Plays",
+      "pages": [
+        "plays/basics",
+        "plays/prospecting",
+        "plays/outreach"
+      ]
+    },
+    {
+      "group": "Launch",
+      "pages": [
+        "launch/start",
+        "launch/training",
+        "launch/autopilot"
+      ]
+    },
+    {
+      "group": "Mailboxes",
+      "pages": [
+        "mailboxes/mailboxes",
+        "mailboxes/recommendations"
+      ]
+    },
+    {
+      "group": "Settings",
+      "pages": [
+        "settings/integrations",
+        "settings/blocklists"
+      ]
     }
-],
+  ],
   "footerSocials": {
     "x": "https://x.com/playmakerml",
     "linkedin": "https://www.linkedin.com/company/playmakerml"
