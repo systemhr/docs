@@ -28,7 +28,7 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://playmaker.mintlify.app/introduction"
     },
     {
       "name": "API Reference",
@@ -38,7 +38,7 @@
     {
       "name": "Status",
       "icon": "battery-three-quarters",
-      "url": "https://mintlify.com/community"
+      "url": "https://status.playmakerml.com/"
     }
   ],
   "navigation": [
