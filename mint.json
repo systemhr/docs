@@ -70,8 +70,8 @@
     {
       "group": "Settings",
       "pages": [
-        "settings/integrations",
-        "settings/blocklists"
+        "settings/blocklists",
+        "settings/integrations"
       ]
     }
   ],
