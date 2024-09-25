@@ -3,8 +3,37 @@ title: 'Best Practices'
 description: 'Important tips to keep your Plays sending without disruption.'
 ---
 
-<tip>
-We're conservative on limits that lead to email deliverability.
-</tip>
+<Tip>
+If your plan includes Fully-Managed Email Infrastructure, we'll handle all of this for you.
+</Tip>
 
-This
+
+## Sales Domains
+**Never send cold email from your primary domain**. Always use separate sales domains to maintain a separate reputation and mitigate risk to your business-critical emails.
+
+We recommend starting with **3 sales domains**. If your company is company.com, for example, you could register:
+- getcompany.com
+- trycompany.com
+- withcompany.com
+
+## DNS Records
+When registering your sales domains, it is critical to set up your DNS records to land in the inbox.
+
+Please be sure you have configured properly your:
+- SPF Record
+- DKIM Record
+- DMARC Record
+
+
+## Mailboxes Per Domain
+We recommend no more than **5 mailboxes per domain.**
+
+## Emails Per Mailbox
+We recommend sending no more than **25 emails per day per mailbox**
+
+For Mailboxes connected recently, the limit will automatically start at 10 emails per day per mailbox, and will automatically ramp from there.
+
+
+## Email Warmup
+It is critical to keep all Mailboxes connected to an Email Warmup service for the entire duration of your outreach.
+If your 
