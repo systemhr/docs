@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "theme": "prism",
-  "name": "Starter Kit",
+  "name": "Playmaker",
   "logo": {
     "dark": "https://60ed85ec29557f7bbc07a3ef5e23416c.cdn.bubble.io/f1727225133034x659082899689726800/dark-mode-logo.svg",
     "light": "https://60ed85ec29557f7bbc07a3ef5e23416c.cdn.bubble.io/f1727225136341x356747213935213060/light-mode-logo.svg"
