@@ -74,10 +74,11 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Endpoints",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create"
+        "api-reference/endpoint/account",
+        "api-reference/endpoint/contact",
+        "api-reference/endpoint/plays"
       ]
     },
     {
