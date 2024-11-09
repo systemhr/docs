@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "theme": "prism",
-  "name": "Starter Kit",
+  "name": "Playmaker",
   "logo": {
-    "dark": "https://framerusercontent.com/images/99aPPt1KlJB1qusC7sn4xhL4hbw.svg",
-    "light": "https://framerusercontent.com/images/99aPPt1KlJB1qusC7sn4xhL4hbw.svg"
+    "dark": "https://60ed85ec29557f7bbc07a3ef5e23416c.cdn.bubble.io/f1727225133034x659082899689726800/dark-mode-logo.svg",
+    "light": "https://60ed85ec29557f7bbc07a3ef5e23416c.cdn.bubble.io/f1727225136341x356747213935213060/light-mode-logo.svg"
   },
   "favicon": "/favicon.svg",
-  "colors": { 
+  "colors": {
     "primary": "#7171f2",
     "light": "#AEAEFF",
     "dark": "#7171f2",
@@ -16,35 +16,20 @@
       "to": "#AEAEFF"
     }
   },
-  "topbarLinks": [
+  "topbarLinks": [{
+      "name": "Support",
+      "url": "mailto:support@playmakerml.com"
+    }
   ],
   "topbarCtaButton": {
     "name": "Go to Playmaker ->",
     "url": "https://app.playmakerml.com"
   },
-  "tabs": [
-    {
-        "name": "API References",
-        "url": "api-references"
-    },
-    {
-        "name": "Content",
-        "url": "content"
-    },
-    {
-        "name": "Blog",
-        "url": "https://your-website.com/blog"
-    }
-],
+  "tabs": [],
   "anchors": [
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://playmaker.mintlify.app/intro/overview"
-    },
-    {
-      "name": "API Reference",
-      "icon": "code",
       "url": "https://playmaker.mintlify.app/intro/overview"
     },
     {
@@ -57,14 +42,49 @@
     {
       "group": "Introduction",
       "pages": [
-        "endpoints/create",
-        "endpoints/delete",
-        "endpoints/get"
+        "intro/overview"
+      ]
+    },
+    {
+      "group": "Plays",
+      "pages": [
+        "plays/basics",
+        "plays/prospecting",
+        "plays/outreach"
+      ]
+    },
+    {
+      "group": "Launch",
+      "pages": [
+        "launch/start",
+        "launch/training",
+        "launch/autopilot"
+      ]
+    },
+    {
+      "group": "Mailboxes",
+      "pages": [
+        "mailboxes/mailboxes",
+        "mailboxes/recommendations"
+      ]
+    },
+    {
+      "group": "Settings",
+      "pages": [
+        "settings/blocklists",
+        "settings/integrations"
       ]
     }
   ],
   "footerSocials": {
     "x": "https://x.com/playmakerml",
     "linkedin": "https://www.linkedin.com/company/playmakerml"
-  }
+  },
+  "modeToggle": {
+  "default": "dark",
+  "isHidden": false
+},
+"seo": {
+  "indexHiddenPages": false
+}
 }
