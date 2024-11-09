@@ -65,6 +65,86 @@
                     "type": "string",
                     "description": "(Optional) - The Linkedin URL of this company.",
                     "nullable": true
+                  },
+                  "revenue": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "employees": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "city": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "state": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "country": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "postal_code": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "industry": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "full_address": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "twitter": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "youtube": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "facebook": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "instagram": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "logo": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "timezone": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
                   }
                 },
                 "required": ["domain", "play_id"]
@@ -90,6 +170,86 @@
                   "linkedin": {
                     "type": "string",
                     "description": "(Optional) - The Linkedin URL of this company.",
+                    "nullable": true
+                  },
+                  "revenue": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "employees": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "city": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "state": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "country": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "postal_code": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "industry": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "full_address": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "twitter": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "youtube": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "facebook": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "instagram": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "logo": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "timezone": {
+                    "type": "string",
+                    "description": "",
                     "nullable": true
                   }
                 },
@@ -162,6 +322,26 @@
                     "description": "",
                     "nullable": true
                   },
+                  "seniority": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "phone_2": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "image": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
                   "company": {
                     "type": "object",
                     "properties": {
@@ -176,6 +356,86 @@
                         "nullable": true
                       },
                       "linkedin": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "employees": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "revenue": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "phone": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "city": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "state": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "country": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "postal_code": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "full_address": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "industry": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "timezone": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "twitter": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "youtube": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "facebook": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "instagram": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "logo": {
                         "type": "string",
                         "description": "",
                         "nullable": true
@@ -217,6 +477,26 @@
                     "description": "",
                     "nullable": true
                   },
+                  "seniority": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "phone_2": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "image": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
                   "company": {
                     "type": "object",
                     "properties": {
@@ -231,6 +511,86 @@
                         "nullable": true
                       },
                       "linkedin": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "employees": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "revenue": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "phone": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "city": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "state": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "country": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "postal_code": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "full_address": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "industry": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "timezone": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "twitter": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "youtube": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "facebook": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "instagram": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "logo": {
                         "type": "string",
                         "description": "",
                         "nullable": true
