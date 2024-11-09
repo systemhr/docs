@@ -7,7 +7,7 @@
     "light": "https://framerusercontent.com/images/99aPPt1KlJB1qusC7sn4xhL4hbw.svg"
   },
   "favicon": "/favicon.svg",
-  "colors": {
+  "colors": { 
     "primary": "#7171f2",
     "light": "#AEAEFF",
     "dark": "#7171f2",
@@ -23,7 +23,19 @@
     "url": "https://app.playmakerml.com"
   },
   "tabs": [
-  ],
+    {
+        "name": "API References",
+        "url": "api-references"
+    },
+    {
+        "name": "Content",
+        "url": "content"
+    },
+    {
+        "name": "Blog",
+        "url": "https://your-website.com/blog"
+    }
+],
   "anchors": [
     {
       "name": "Documentation",
