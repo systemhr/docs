@@ -76,11 +76,7 @@
     {
   "group": "Getting Started",
   "pages": [
-    "api-reference/introduction",
-    {
-      "title": "Authentication",
-      "path": "api-reference/introduction#authentication"
-    }
+    "api-reference/introduction"
   ]
 },
     {
