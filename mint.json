@@ -74,13 +74,18 @@
       ]
     },
     {
-      "group": "Endpoints",
-      "pages": [
-        "api-reference/endpoint/account",
-        "api-reference/endpoint/contact",
-        "api-reference/endpoint/plays"
-      ]
-    },
+  "group": "Leads",
+  "pages": [
+    "api-reference/endpoint/account",
+    "api-reference/endpoint/contact"
+  ]
+},
+{
+  "group": "Plays",
+  "pages": [
+    "api-reference/endpoint/plays"
+  ]
+},
     {
       "group": "Settings",
       "pages": [
