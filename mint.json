@@ -16,7 +16,10 @@
       "to": "#AEAEFF"
     }
   },
-  "topbarLinks": [
+  "topbarLinks": [{
+      "name": "Support",
+      "url": "support@playmakerml.com"
+    }
   ],
   "topbarCtaButton": {
     "name": "Go to Playmaker ->",
