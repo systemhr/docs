@@ -74,6 +74,12 @@
       ]
     },
     {
+  "group": "Getting Started",
+  "pages": [
+    "api-reference/introduction"
+  ]
+},
+    {
   "group": "Leads",
   "pages": [
     "api-reference/endpoint/account",
