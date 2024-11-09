@@ -1,194 +1,310 @@
 {
-  "openapi": "3.0.1",
-  "info": {
-    "title": "OpenAPI Plant Store",
-    "description": "A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification",
-    "license": {
-      "name": "MIT"
-    },
-    "version": "1.0.0"
-  },
-  "servers": [
-    {
-      "url": "http://sandbox.mintlify.com"
-    }
-  ],
-  "security": [
-    {
-      "bearerAuth": []
-    }
-  ],
-  "paths": {
-    "/plants": {
-      "get": {
-        "description": "Returns all plants from the system that the user has access to",
-        "parameters": [
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "The maximum number of results to return",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Plant response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Plant"
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "description": "Creates a new plant in the store",
-        "requestBody": {
-          "description": "Plant to add to the store",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewPlant"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "plant response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Plant"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/plants/{id}": {
-      "delete": {
-        "description": "Deletes a single plant based on the ID supplied",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "ID of plant to delete",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "Plant deleted",
-            "content": {}
-          },
-          "400": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
+  "openapi": "3.0.0",
+  "info": { "title": "Public API", "description": "", "version": "0.0.1" },
+  "servers": [{ "url": "https://api.scaleframe.app/api:public" }],
   "components": {
-    "schemas": {
-      "Plant": {
-        "required": [
-          "name"
-        ],
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "The name of the plant",
-            "type": "string"
-          },
-          "tag": {
-            "description": "Tag to specify the type",
-            "type": "string"
-          }
-        }
-      },
-      "NewPlant": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/Plant"
-          },
-          {
-            "required": [
-              "id"
-            ],
-            "type": "object",
-            "properties": {
-              "id": {
-                "description": "Identification number of the plant",
-                "type": "integer",
-                "format": "int64"
-              }
-            }
-          }
-        ]
-      },
-      "Error": {
-        "required": [
-          "error",
-          "message"
-        ],
-        "type": "object",
-        "properties": {
-          "error": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "message": {
-            "type": "string"
-          }
-        }
-      }
-    },
     "securitySchemes": {
       "bearerAuth": {
         "type": "http",
-        "scheme": "bearer"
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {}
+  },
+  "paths": {
+    "/account": {
+      "post": {
+        "summary": "Create an account (company) in Playmaker and enroll them in a Play.",
+        "description": "Create an account (company) in Playmaker and enroll them in a Play.\n\u003Cbr /\u003E\u003Cbr /\u003E\n\u003Cb\u003EAuthentication:\u003C/b\u003E required",
+        "tags": ["account"],
+        "security": [{ "bearerAuth": [] }],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success!",
+            "content": {
+              "application/json": {
+                "schema": { "type": "object", "description": "" }
+              }
+            }
+          },
+          "400": {
+            "description": "Input Error. Check the request payload for issues."
+          },
+          "401": { "description": "Unauthorized" },
+          "403": {
+            "description": "Access denied. Additional privileges are needed access the requested resource."
+          },
+          "404": {
+            "description": "Not Found. The requested resource does not exist."
+          },
+          "429": { "description": "Rate Limited. Too many requests." },
+          "500": { "description": "Unexpected error" }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "domain": {
+                    "type": "string",
+                    "description": "(Required) - This company\u0027s primary domain, not including www or https://. \n\n(Example: apple.com, sony.com)"
+                  },
+                  "play_id": {
+                    "type": "string",
+                    "description": "(Required) - The id of the play that you would like to add this Account to.\n\nThis value can be found through the \u0022Get Plays\u0022 endpoint, or in the app by visiting the Play and grabbing its ID from the url."
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "(Optional) - The name of this company.",
+                    "nullable": true
+                  },
+                  "linkedin": {
+                    "type": "string",
+                    "description": "(Optional) - The Linkedin URL of this company.",
+                    "nullable": true
+                  }
+                },
+                "required": ["domain", "play_id"]
+              }
+            },
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "domain": {
+                    "type": "string",
+                    "description": "(Required) - This company\u0027s primary domain, not including www or https://. \n\n(Example: apple.com, sony.com)"
+                  },
+                  "play_id": {
+                    "type": "string",
+                    "description": "(Required) - The id of the play that you would like to add this Account to.\n\nThis value can be found through the \u0022Get Plays\u0022 endpoint, or in the app by visiting the Play and grabbing its ID from the url."
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "(Optional) - The name of this company.",
+                    "nullable": true
+                  },
+                  "linkedin": {
+                    "type": "string",
+                    "description": "(Optional) - The Linkedin URL of this company.",
+                    "nullable": true
+                  }
+                },
+                "required": ["domain", "play_id"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contact": {
+      "post": {
+        "summary": "Create a contact (person) in Playmaker and enroll them in a Play.",
+        "description": "Create a contact (person) in Playmaker and enroll them in a Play.\n\u003Cbr /\u003E\u003Cbr /\u003E\n\u003Cb\u003EAuthentication:\u003C/b\u003E required",
+        "tags": ["contact"],
+        "security": [{ "bearerAuth": [] }],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success!",
+            "content": {
+              "application/json": {
+                "schema": { "type": "object", "description": "" }
+              }
+            }
+          },
+          "400": {
+            "description": "Input Error. Check the request payload for issues."
+          },
+          "401": { "description": "Unauthorized" },
+          "403": {
+            "description": "Access denied. Additional privileges are needed access the requested resource."
+          },
+          "404": {
+            "description": "Not Found. The requested resource does not exist."
+          },
+          "429": { "description": "Rate Limited. Too many requests." },
+          "500": { "description": "Unexpected error" }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": { "type": "string", "description": "" },
+                  "play_id": { "type": "string", "description": "" },
+                  "first_name": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "last_name": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "full_name": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "title": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "linkedin": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "company": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "domain": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "linkedin": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      }
+                    }
+                  }
+                },
+                "required": ["email", "play_id"]
+              }
+            },
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": { "type": "string", "description": "" },
+                  "play_id": { "type": "string", "description": "" },
+                  "first_name": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "last_name": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "full_name": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "title": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "linkedin": {
+                    "type": "string",
+                    "description": "",
+                    "nullable": true
+                  },
+                  "company": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "domain": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      },
+                      "linkedin": {
+                        "type": "string",
+                        "description": "",
+                        "nullable": true
+                      }
+                    }
+                  }
+                },
+                "required": ["email", "play_id"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me": {
+      "get": {
+        "summary": "Test your API credentials and retrieve your company\u0027s basic information.",
+        "description": "Test your API credentials and retrieve your company\u0027s basic information.\n\u003Cbr /\u003E\u003Cbr /\u003E\n\u003Cb\u003EAuthentication:\u003C/b\u003E required",
+        "tags": ["me"],
+        "security": [{ "bearerAuth": [] }],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success!",
+            "content": {
+              "application/json": {
+                "schema": { "type": "object", "properties": {} }
+              }
+            }
+          },
+          "400": {
+            "description": "Input Error. Check the request payload for issues."
+          },
+          "401": { "description": "Unauthorized" },
+          "403": {
+            "description": "Access denied. Additional privileges are needed access the requested resource."
+          },
+          "404": {
+            "description": "Not Found. The requested resource does not exist."
+          },
+          "429": { "description": "Rate Limited. Too many requests." },
+          "500": { "description": "Unexpected error" }
+        }
+      }
+    },
+    "/plays": {
+      "get": {
+        "summary": "Retrieve a list of your company\u0027s Plays.",
+        "description": "Retrieve a list of your company\u0027s Plays.\n\u003Cbr /\u003E\u003Cbr /\u003E\n\u003Cb\u003EAuthentication:\u003C/b\u003E required",
+        "tags": ["plays"],
+        "security": [{ "bearerAuth": [] }],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success!",
+            "content": {
+              "application/json": {
+                "schema": { "type": "object", "properties": {} }
+              }
+            }
+          },
+          "400": {
+            "description": "Input Error. Check the request payload for issues."
+          },
+          "401": { "description": "Unauthorized" },
+          "403": {
+            "description": "Access denied. Additional privileges are needed access the requested resource."
+          },
+          "404": {
+            "description": "Not Found. The requested resource does not exist."
+          },
+          "429": { "description": "Rate Limited. Too many requests." },
+          "500": { "description": "Unexpected error" }
+        }
       }
     }
   }
