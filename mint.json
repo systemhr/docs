@@ -22,23 +22,7 @@
     "name": "Go to Playmaker ->",
     "url": "https://app.playmakerml.com"
   },
-  "tabs": [
-    {
-        "name": "API References",
-        "url": "api-reference/introduction"
-    },
-    {
-        "name": "Content",
-        "url": "content"
-    },
-    {
-        "name": "Blog",
-        "url": "https://your-website.com/blog"
-    }
-],
-"primaryTab": {
-    "name": "Home"
-},
+  "tabs": [],
   "anchors": [
     {
       "name": "Documentation",
